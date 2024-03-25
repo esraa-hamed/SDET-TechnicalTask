@@ -17,20 +17,14 @@ jobs:
       - run:
           command: npm install 
       - run:
-          name: Make start script executable
-          command: chmod +x api-tests/scripts/start.sh
-      - run:
-          name: Start API tests
-          command: npm start
-      - run:
-          name: Run api tests
-          command: npm run api-test
-      - run:
           name: Run mystore tests - Contact Us Page
           command: npm test -- --tag contactus
       - run:
           name: Run mystore tests - Home Page
           command: npm test -- --tag home
+      - run:
+          name: Run api tests
+          command: npm run api-test
       - store_test_results:
           path: ./test-results/
   build-node:
