@@ -6,7 +6,7 @@ Simple implementaion of testing [MyStore website](https://multiformis.com) using
 ## Project Installation
 - git clone [repository-url]
 - cd [project-directory]
-- npm install
+- `npm install`
 
 ## MyStore Tests
 Tests designed to verify the functionality of the MyStore website.
@@ -22,7 +22,7 @@ Tests designed to test all the API routes found on the mock-user-auth npm page.
 - `chmod +x api-tests/scripts/start.sh`
 - `npm start`
 ### Tests Run Command:
-- npm run api-test
+- `npm run api-test`
 
 
 
