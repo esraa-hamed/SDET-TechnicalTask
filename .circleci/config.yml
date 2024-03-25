@@ -8,16 +8,23 @@ jobs:
     # Install node dependencies and run tests
     executor: node/default
     environment:
-      JEST_JUNIT_OUTPUT_DIR: ./test-results/
+       JEST_JUNIT_OUTPUT_DIR: ./test-results/
+       NIGHTWATCH_OUTPUT_DIR: ./test-results/
     steps:
       - checkout
       - node/install-packages:
           pkg-manager: npm
       - run:
-          command: npm install jest-junit
+          command: npm install 
       - run:
-          name: Run tests
-          command: npm run test --ci --runInBand --reporters=default --reporters=jest-junit
+          name: Run api tests
+          command: npm run api-test
+      - run:
+          name: Run mystore tests - Contact Us Page
+          command: npm test -- --tag contactus
+      - run:
+          name: Run mystore tests - Home Page
+          command: npm test -- --tag home
       - store_test_results:
           path: ./test-results/
   build-node:
