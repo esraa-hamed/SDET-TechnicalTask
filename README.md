@@ -30,7 +30,7 @@ HTML reports are automatically generated for both the mystore tests and api test
 ## Notes
 
 ### mock-user-auth module
-The **components**, **scripts** and **config** folders are sourced from the [GitHub repository](https://github.com/thiagoluiznunes/mock-user-auth) found in the [mock-user-auth](https://www.npmjs.com/package/mock-user-auth) module 
+The **app.js** file, **components**, **scripts** and **config** folders are sourced from the [GitHub repository](https://github.com/thiagoluiznunes/mock-user-auth) found in the [mock-user-auth](https://www.npmjs.com/package/mock-user-auth) module 
 
 ### CircleCI Issue
 There is an issue with the CircleCI pipeline where the tests fail, even though the project runs successfully on my local machine. This issue may be related to configuration differences between the local environment and the CI environment.
