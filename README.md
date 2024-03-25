@@ -24,6 +24,9 @@ Tests designed to test all the API routes found on the mock-user-auth npm page.
 ### Tests Run Command (in a new terminal):
 - `npm run api-test`
 
+## HTML reports
+HTML reports are automatically generated for both the mystore tests and api tests inside the **tests_output** folder that will be automatically created after the run commands  
+
 ## Notes
 
 ### mock-user-auth module
