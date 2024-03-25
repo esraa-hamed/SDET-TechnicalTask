@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Run api tests
           command: npm run api-test
-       - run:
+      - run:
           name: Run mystore tests - Contact Us Page
           command: npm test -- --tag contactus
       - run:
