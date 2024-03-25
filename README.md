@@ -21,7 +21,7 @@ Tests designed to test all the API routes found on the mock-user-auth npm page.
 ### Setup Commands:
 - `chmod +x api-tests/scripts/start.sh`
 - `npm start`
-### Tests Run Command:
+### Tests Run Command (in a new terminal):
 - `npm run api-test`
 
 ## Notes
