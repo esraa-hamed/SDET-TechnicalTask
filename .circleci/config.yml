@@ -23,6 +23,12 @@ jobs:
           name: Run mystore tests - Home Page
           command: npm test -- --tag home
       - run:
+          name: Make start script executable
+          command: chmod +x api-tests/scripts/start.sh
+      - run:
+          name: Start API tests
+          command: npm start
+      - run:
           name: Run api tests
           command: npm run api-test
       - store_test_results:
