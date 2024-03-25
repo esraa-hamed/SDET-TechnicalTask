@@ -24,5 +24,6 @@ Tests designed to test all the API routes found on the mock-user-auth npm page.
 ### Tests Run Command:
 - `npm run api-test`
 
-
+#### CircleCI Issue
+There is an issue with the CircleCI pipeline where the tests fail, even though the project runs successfully on my local machine. This issue may be related to configuration differences between the local environment and the CI environment.
 
