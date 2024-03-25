@@ -9,7 +9,8 @@ Simple implementaion of testing [MyStore website](https://multiformis.com) using
 - `npm install`
 
 ## MyStore Tests
-Tests designed to verify the functionality of the MyStore website.
+- Tests designed to verify the functionality of the MyStore website.
+- Test files found in **my-store-tests --> tests**
 - **Home Page Testing:** Test home page search functionality on typing "dress" search query.
 - **Contact Us Page Testing:** Test contact us form submission with different scenarios.
 ### How to run:
@@ -17,7 +18,8 @@ Tests designed to verify the functionality of the MyStore website.
 - **For Contact Us Page Testing:** `npm test -- --tag contactus`
 
 ## API Tests
-Tests designed to test all the API routes found on the mock-user-auth npm page.
+- Tests designed to test all the API routes found on the mock-user-auth npm page.
+- Test file found in **api-tests -> app.test.js**
 ### Setup Commands:
 - `chmod +x api-tests/scripts/start.sh`
 - `npm start`
@@ -30,7 +32,7 @@ HTML reports are automatically generated for both the mystore tests and api test
 ## Notes
 
 ### mock-user-auth module
-The **app.js** file, **components**, **scripts** and **config** folders are sourced from the [GitHub repository](https://github.com/thiagoluiznunes/mock-user-auth) found in the [mock-user-auth](https://www.npmjs.com/package/mock-user-auth) module 
+The **app.js** file, **bin**, **components**, **scripts** and **config** folders are sourced from the [GitHub repository](https://github.com/thiagoluiznunes/mock-user-auth) found in the [mock-user-auth](https://www.npmjs.com/package/mock-user-auth) module 
 
 ### CircleCI Issue
 There is an issue with the CircleCI pipeline where the tests fail, even though the project runs successfully on my local machine. This issue may be related to configuration differences between the local environment and the CI environment.
